@@ -2,10 +2,6 @@ body {
     background-color: #f3f36d;
 }
 
-me {
-    float: center;
-    height: 300px;
-    width: 300px;
-    margin: 15px;
-    border-radius: 50%;
+h1 {
+    text-align: center;
 }

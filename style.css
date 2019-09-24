@@ -28,6 +28,11 @@ p {
     font-size: 20px;
 }
 
+p.copy {
+    text-align: center;
+    padding: 10%;
+}
+
 .nav ul {
     margin: 0;
 }

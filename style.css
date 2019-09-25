@@ -28,6 +28,15 @@ p {
     font-size: 20px;
 }
 
+li.second {
+    display: block;
+    border: 1px solid #000;
+    border-width: 2px 1px 2px 1px;
+    width: 280px;
+    padding: 10px 10px 10px 10px;
+    margin: 15px auto 15px auto;
+}
+
 footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 130%;
@@ -63,7 +72,7 @@ img.me {
 
 .page {
     max-width: 900px;
-    min-width: 900px;
+    min-width: 700px;
     padding: 30px;
     border: 4px double #000;
     background-color: #ffbb;

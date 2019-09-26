@@ -5,14 +5,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="text">
+
+    </div>
+
+    <script type="text/javascript">
+    var i = 0, text;
+    text = "Welcome To Deaf Dev Web"
+
+    function typing() {
+        if(i < text.length) {
+            document.getElementById("text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing,50);
+        }
+    }
+    typing();
+    </script>
+
     <div class="page">
-    <h1>Hello Wolrd!</h1>
-    <hr />
+    
     <ul id="navigation">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    <hr />
     <img class="me" src="images/me.jpg" alt="profile photo">
     <p class="first">Welcome to my profile.</p>
     <p class="first1">

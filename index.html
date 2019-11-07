@@ -1,52 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Deaf Dev Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <title>Deaf Dev</title>
 </head>
 <body>
-    <div id="text">
-
+   <header class="showcase">
+       <div class="content">
+           <div class="title">
+               Welcome To Deaf Dev
+           </div>
+           <div class="text">
+               Celebrate Your small wins.
+               <br />
+               Find your Learning Style.
+               <br />
+               Don't Be Afraid To Seek Help.
+               <br />
+               Learn By Doing.
+           </div>
+       </div>
+   </header>
+   <hr />
+   <section class="services">
+    <div>
+       <h2>About</h2>
+       <h3>Hello,I'm wen,I'm Deaf and a self-scholar.</h3>
+       <p>I have an article about my self-taught story.
+           <br />
+        I want to learn how to become great a front-end developer,build simple beautiful the page or build use a good the app.
+        <br />
+        From FreeCodeCamp learn Basic HTML and CSS and JavaScript.
+        <br />
+        I think to use SoloLearn any lessons can to strengthen my where knowledge not enough, really helpful for me.😊
+       </p>
+       <br />
+       My article:
+       <a href="https://dev.to/kyotofu28/from-deaf-to-dev-a-story-about-a-deaf-person-learns-to-code-3aok" target="_blank">Form Deaf to Dev:A Story about a Deaf Person Learns to Code</a>
     </div>
-
-    <script type="text/javascript">
-    var i = 0, text;
-    text = "Welcome To Deaf Dev Web"
-
-    function typing() {
-        if(i < text.length) {
-            document.getElementById("text").innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typing,50);
-        }
-    }
-    typing();
-    </script>
-
-    <div class="page">
-    
-    <ul id="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div>
     <hr />
-    <img class="me" src="images/me.jpg" alt="profile photo">
-    <p class="first">Welcome to my profile.</p>
-    <p class="first1">
-        <ul>
-            <li class="second">Celebrate Your small wins.</li>
-            <li class="second">Find your Learning Style.</li>
-            <li class="second">Don't Be Afraid To Seek Help.</li>
-            <li class="second">Learn By Doing.</li>
-        </ul>
-    </p>
+        <h3>Certificate</h3>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.freecodecamp.org/certification/fcc810d82ef-85d9-4d51-919f-dd8b7fa5eb78/responsive-web-design" target="_blank">
+                        <img src="images/responsive-web-design.png" width="200px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/certification/fcc810d82ef-85d9-4d51-919f-dd8b7fa5eb78/javascript-algorithms-and-data-structures" target="_blank">
+                        <img src="images/Javascript.png" width="200px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.sololearn.com/Certificate/1014-14649694/pdf/" target="_blank">
+                        <img src="images/sololearn HTML.jpg" width="200px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.sololearn.com/Certificate/1024-14649694/pdf/" target="_blank">
+                        <img src="images/sololeran JavaScript.jpg" width="200px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    <div class="slide-buttons"></div>
-    
-    <footer>
-        &copy; 2019 Wen Chi Yu
-    </footer>
-    
+   </section>
+   <hr />
+   <center>
+   <img class="me" src="images/me.jpg" alt="profile photo">
+
+   <div class="contact"></div>
+   <div class="a">
+   <a href="https://twitter.com/WenChiYu28" target="_blank">
+    <img src="images/Twitter_Social_Icon_Circle_Color.png" width="50px">
+    </a>
+    <a href="https://github.com/wen1984" target="_blank">
+    <img src="images/Octocat.png" width="50px">
+    </a>
+    <a href="mailto:kyotofu28@gmail.com" target="_blank">
+    <img src="images/icons8-email-48.png" width="55px">
+    </a>
+    </div>
+    </center>
+
+   <footer class="center bg-dark">
+       <p>&copy; 2019 Wen Chi Yu</p>
+   </footer>
 </body>
 </html>

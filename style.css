@@ -7,7 +7,7 @@ body {
 
 .showcase::after {
     content: '';
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-image: url(pexels-photo-326424.jpeg);
     background-size: cover;
@@ -38,19 +38,19 @@ body {
     width: 300px;
     height: 360px;
     text-align: center;
-    transition: all 1000ms;
+    transition: all 2000ms;
 }
 
 .content .title {
-    font-size: 2.5rem;
-    margin-top: 0.9rem;
+    font-size: 2rem;
+    margin-top: 0.8rem;
     color: #a5a1a1;
 }
 
 .content .text {
     line-height: 2;
-    margin-top: 2rem;
-    font-size: 20px;
+    margin-top: 0.5rem;
+    font-size: 18px;
     color: #a88f8f;
 }
 
@@ -58,7 +58,7 @@ body {
     max-width: 960px;
     margin: auto;
     overflow: hidden;
-    padding: 4rem 1rem;
+    padding: 3.5rem 1.5rem;
 }
 
 .services div {
@@ -118,7 +118,7 @@ a {
 }
 
 footer {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 footer p {

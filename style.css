@@ -1,5 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(34, 34, 34);
     margin: 0;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,7 +13,7 @@ body {
 
 .showcase::after {
     content: '';
-    height: 100vh;
+    height: 700px;
     width: 100%;
     background-image: url(pexels-photo-326424.jpeg);
     background-size: cover;
@@ -31,20 +37,20 @@ body {
 .content {
     position: absolute;
     z-index: 1;
-    top: 10%;
+    top: 50%;
     left: 50%;
-    margin-top: 105px;
+    margin-top: 55px;
     margin-left: -145px;
     width: 300px;
     height: 360px;
     text-align: center;
-    transition: all 2000ms;
+    transition: all 1000ms;
 }
 
 .content .title {
     font-size: 2rem;
-    margin-top: 0.8rem;
-    color: #a5a1a1;
+    margin-top: 0.7rem;
+    color: #f8cece;
 }
 
 .content .text {
@@ -59,6 +65,14 @@ body {
     margin: auto;
     overflow: hidden;
     padding: 3.5rem 1.5rem;
+}
+
+.services p {
+    line-height: auto;
+}
+
+.services a {
+    color: #0088dd;
 }
 
 .services div {
@@ -118,11 +132,17 @@ a {
 }
 
 footer {
-    padding: 1rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 40px;
 }
 
 footer p {
-    margin: 0;
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
 }
 
 /* Small Screens */

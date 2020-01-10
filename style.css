@@ -1,165 +1,482 @@
+@import url("reset.css");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    background: rgb(34, 34, 34);
-    margin: 0;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.showcase::after {
-    content: '';
-    height: 700px;
-    width: 100%;
-    background-image: url(pexels-photo-326424.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
+img {
     display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    transition: all 2000ms;
 }
 
-.showcase:hover::after {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
 }
 
-.showcase:hover .content {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+/* ---------------------------- */
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #bbb;
 }
 
-.content {
+header > h1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 60px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+header > a.menu {
     position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    margin-top: 55px;
-    margin-left: -145px;
-    width: 300px;
-    height: 360px;
-    text-align: center;
-    transition: all 1000ms;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("images/menu.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
-.content .title {
-    font-size: 2rem;
-    margin-top: 0.7rem;
-    color: #f8cece;
+.menubox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
 }
 
-.content .text {
-    line-height: 2;
-    margin-top: 0.5rem;
-    font-size: 18px;
-    color: #a88f8f;
-}
-
-.services {
-    max-width: 960px;
-    margin: auto;
+.menubox > h3 {
+    display: block;
+    width: 100%;
+    height: auto;
     overflow: hidden;
-    padding: 3.5rem 1.5rem;
-}
-
-.services p {
-    line-height: auto;
-}
-
-.services a {
-    color: #0088dd;
-}
-
-.services div {
-    padding: 1.5rem 1.5rem;
-}
-
-li {
-    display: inline;
-    border: 2px solid #0088dd;
-    padding: 10px 10px 10px 10px;
-    margin: 50px 10px 10px 10px;
     text-align: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5%;
 }
 
-.nav ul {
-    margin: 0;
+.menubox > ol {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 50px;
 }
 
-.nav li {
+.menubox > ol > li {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.menubox > ol > li > a {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    color: #fb8b01;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+}
+
+a#closebtn {
+    display: block;
+    width: 20px;
+    height: 22px;
+    background-image: url("images/x.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+/* ------------------------------------------------ */
+article {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #088ca5;
+}
+
+article > div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+article > div > h1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: 'Seymour One', sans-serif;
+    color: #fb8b01;
+    padding-bottom: 10px;
+    margin: a auto;
+    padding: 10px 40px 10px 30px;
+}
+
+article > div > p {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #353333;
+    padding-bottom: 30px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 10px 30px 0px 30px;
+}
+
+article > h2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Seymour One', sans-serif;
+    color: #fb8b01;
+    margin: 0 auto;
+    padding: 10px 30px 10px 30px;
+}
+
+article > p {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #353333;
+    line-height: 12px;
+    margin: 0 auto;
+    padding: 10px 30px 0px 30px;
+    padding-bottom: 10px;
+}
+
+article > a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine;
+}
+/* ------------------------------------------------------- */
+div > h3 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 25px;
+    font-family: 'Seymour One', sans-serif;
+    color: #fb8b01;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding: 10px 30px 10px 30px;
+    background-color: #222222;
+}
+
+.certificate > a > img {
     display: inline;
+    border: 1px solid none;
+    padding: 15px 10px 15px 10px;
+    margin: 10px 20px 10px 20px;
+}
+
+.certificate > a > img:hover {
     border: none;
+    background-color: #f8fdf34d;
 }
-
-.nav a {
-    display: inline-block;
-    padding: .5em;
-}
-
-.nav a:hover {
-    background-color: #def3ca4d;
-}
-
-img.me {
-    padding: 20px;
-    height: 250px;
-    width: 250px;
-    margin: 0px auto;
-    border-radius: 50%;
-}
-
-a {
-    display: inline-block;
-    padding: 40px 0px 30px 0px;
-    margin: 0px auto 0px auto;
-    overflow: hidden;
-    padding: 2.2rem 1rem;
-}
-
-.center {
-    text-align: center;
-    margin: auto;
-}
-
-.bg-dark {
-    background: #333;
-    color: #f4f4f4;
-}
-
+/* ------------------------------------------------------ */
 footer {
     width: 100%;
     height: auto;
     overflow: hidden;
-    line-height: 40px;
+    background-color: #bbbccb;
 }
 
-footer p {
-    background-color: orange;
+footer > div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+footer > div > a {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: stretch;
+    padding: 0px 9% 1px;
+}
+
+footer > div > img {
+    padding: 30px;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+footer > p {
+    background-color: #bbb;
     color: #fff;
     text-decoration: none;
     text-align: center;
+    font-size: 20px;
+    line-height: 40px;
 }
 
-/* Small Screens */
-@media (max-width: 560px) {
-    .showcase::after {
-        height: 50vh;
+/* --------------------------------------------- */
+@media screen and (max-width:730px) {
+    header {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    header > h1 {
+        line-height: 60px;
+    }
+
+    header > a.menu {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-image: url("images/menu.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .menubox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menubox > h3 {
+        font-size: 25px;
+    }
+
+    .menubox > ol {
+        width: 100%;
+    }
+
+    .menubox > ol > li {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .menubox > ol > li > a {
+        width: 100%;
+        line-height: 30px;
+        letter-spacing: 0.2em;
+    }
+
+    a#closebtn {
+        width: 20px;
+        height: 22px;
+        background-image: url("images/x.png");
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article > div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    article > div > h1 {
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+    }
+
+    article > div > p {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    article > h2 {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    article > p {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+    }
+
+    article > a {
+        font-size: 20px;
+    }
+
+    div > h3 {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100%;
+    }
+    
+    footer > div {
+        width: 100%;
+    }
+    
+    footer > div > img {
+        padding: 30px;
+        height: 250px;
+        width: 250px;
+    }
+    
+    footer > p {
+        font-size: 20px;
+        line-height: 40px;
     }
 }
 
-/* Landscape */
-@media (max-height: 500px) {
-    .content .title,
-    .content .text {
-        display: none;
+@media screen and (max-width:640px) {
+    header {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        overflow: hidden;
     }
-}
 
-.content {
-    top: 0;
+    header > h1 {
+        line-height: 60px;
+    }
+
+    header > a.menu {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-image: url("images/menu.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .menubox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menubox > h3 {
+        font-size: 25px;
+    }
+
+    .menubox > ol {
+        width: 100%;
+    }
+
+    .menubox > ol > li {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .menubox > ol > li > a {
+        width: 100%;
+        line-height: 30px;
+        letter-spacing: 0.2em;
+    }
+
+    a#closebtn {
+        width: 20px;
+        height: 22px;
+        background-image: url("images/x.png");
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article > div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    article > div > h1 {
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+    }
+
+    article > div > p {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    article > h2 {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    article > p {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+    }
+
+    article > a {
+        font-size: 20px;
+    }
+
+    div > h3 {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100%;
+    }
+    
+    footer > div {
+        width: 100%;
+    }
+    
+    footer > div > img {
+        padding: 30px;
+        height: 250px;
+        width: 250px;
+    }
+    
+    footer > p {
+        font-size: 20px;
+        line-height: 40px;
+    }
 }

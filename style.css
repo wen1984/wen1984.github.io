@@ -213,20 +213,20 @@ footer > div {
     overflow: hidden;
 }
 
-footer > div > a {
-    display: inline-block;
-    justify-content: space-between;
-    align-items: flex-end;
-    align-content: stretch;
-    padding: 0px 9% 1px;
-}
-
 footer > div > img {
     padding: 30px;
     height: 250px;
     width: 250px;
     margin: 0 auto;
     border-radius: 50%;
+}
+
+footer > div > a {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: stretch;
+    padding: 0px 9% 1px;
 }
 
 footer > p {
